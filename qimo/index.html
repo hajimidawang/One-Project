@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>期末作业</title>
+    <link rel="stylesheet" href="./css/index.css"> <!-- 引入CSS文件 -->
+</head>
+<body>
+     <!-- logo大图容器 -->
+    <div class="big-logo-wrap">
+        <div class="logo-bigwrap">
+            <div class="logo-wrap">
+                <img src="./img/logo.png" alt="三国杀logo">
+            </div>
+        </div>
+
+        <!-- 搜索框容器 -->
+        <div class="search-wrap">
+            <div class="search-wrap-waimian">
+                <input type="text" id="searchInput" placeholder="搜索武将，皮肤">
+                <button class="search-kuang" type="submit"></button>
+            </div>
+            <ul>
+                <li><a href="./video9.html">潜蛟觊天</a></li>
+                <li><a href="./video8.html">弼朝博虬</a></li>
+                <li><a href="./video4.html">破军杀将</a></li>
+                <li><a href="./video12.html">倚星折月</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 导航 -->
+    <nav class="nav-container">
+        <div class="nav-left">
+            <ul>
+                <li><a href="#">首页</a></li>
+                
+                <li><a href="https://www.sanguosha.cn/pc/rank.html">斗地主榜</a></li>
+                <li><a href="https://www.sanguosha.cn/pc/rank.html">排位榜</a></li>
+                <li><a href="https://www.sanguosha.cn/pc/rank.html">军八榜</a></li>
+                <li><a href="https://share.sanguosha.cn/skins/#/index">皮肤大全</a></li>
+                <li><a href="https://download.sanguosha.cn/sgswx/sgs438.apk">手机版</a></li>
+                <li><a href="https://ldapi.ldmnq.com/game/download/dynamic-link?code=mcc36S">电脑版</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <!-- 修改：移除button内的a标签，直接使用button -->
+            <div class="btn-user"><a href="./user.html">登录/注册</a></div>
+            <div class="btn-center"><a href="./chong.html">充值点卷</a></div>
+        </div>
+    </nav>
+
+    <!-- 转换图片 -->
+    <div class="zhuanhuankuang">
+        <div class="left-container">
+            <div class="left-container-wrap">
+                <h3>最新通知</h3>
+            </div>
+            <ul class="recommendation-list">
+                <li><span class="p1">[公告]</span><a href="https://www.sanguosha.cn/pc/news-detail-2076.html" class="notice-title">6月系统升级维护公告</a><span class="p2">5月30日</span></li>
+                <li><span class="p1">[公告]</span><a href="https://www.sanguosha.cn/pc/news-detail-2071.html" class="notice-title">【梦之回廊一荡然由心】概率公示</a><span class="p2">5月29日</span></li>
+                <li><span class="p1">[公告]</span><a href="https://www.sanguosha.cn/pc/news-detail-2072.html" class="notice-title">天宫宝库概率公示</a><span class="p2">5月28日</span></li>
+                <li><span class="p1">[公告]</span><a href="https://www.sanguosha.cn/pc/news-detail-2075.html" class="notice-title">5月31日端午活动</a><span class="p2">5月27日</span></li>
+                <li><span class="p1">[公告]</span><a href="https://www.sanguosha.cn/pc/news-detail-2077.html" class="notice-title">2025年S6赛季排位赛更新内容</a><span class="p2">5月26日</span></li>
+                <li><span class="p1">[公告]</span><a href="https://www.sanguosha.cn/pc/news-detail-2078.html" class="notice-title">公会团战2025年6月规则说明</a><span class="p2">5月25日</span></li>
+                <li><span class="p1">[公告]</span><a href="https://www.sanguosha.cn/pc/news-detail-2073.html" class="notice-title">第十七届群雄逐鹿火热开启！</a><span class="p2">5月24日</span></li>
+                <li><span class="p1">[公告]</span><a href="https://www.sanguosha.cn/pc/news-detail-2070.html" class="notice-title">5月24日初夏活动</a><span class="p2">5月23日</span></li>
+            </ul>
+        </div>
+
+        <div class="slider">
+            <div class="slider-wrapper">
+                <a href="#" id="slider-link">
+                    <!-- 修改：添加默认图片路径 -->
+                    <img src="./img/default_slider.jpg" alt="轮播图" id="slider-image">
+                </a>
+            </div>
+            <div class="slider-footer">
+                <p id="slider-title">弼朝博虬</p>
+                <ul class="slider-indicator">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="toggle">
+                    <button class="prev">&lt;</button>
+                    <button class="next">&gt;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="right-container-wrap">
+                <h3>热门武将</h3>
+            </div>
+            <ul class="recommendation-list">
+                <li><span class="one">1</span><a href="https://www.sanguosha.cn/pc/hero-detail-613.html">谋吕布</a></li>
+                <li><span class="two">2</span><a href="https://www.sanguosha.cn/pc/hero-detail-610.html">势于吉</a></li>
+                <li><span class="three">3</span><a href="https://www.sanguosha.cn/pc/hero-detail-356.html">界徐盛</a></li>
+                <li><span class="comment">4</span><a href="https://www.sanguosha.cn/pc/hero-detail-604.html">友诸葛亮</a></li>
+                <li><span class="comment">5</span><a href="https://www.sanguosha.cn/pc/hero-detail-576.html">谋曹丕</a></li>
+                <li><span class="comment">6</span><a href="https://www.sanguosha.cn/pc/hero-detail-571.html">谋诸葛亮</a></li>
+                <li><span class="comment">7</span><a href="https://www.sanguosha.cn/pc/hero-detail-599.html">司马昭</a></li>
+                <li><span class="comment">8</span><a href="https://www.sanguosha.cn/pc/hero-detail-387.html">司马师</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 分类展示区 -->
+    <div class="baner">
+        <fieldset>
+            <legend><a href="#">精品女武将</a></legend>
+            <div class="f-wrap">
+                <!-- 修改：移除冗余的ul标签，直接使用li -->
+                <li> 
+                    <a href="./video2.html">
+                        <div class="pic"><img src="./img/张春华-雪中舞刃.png" alt="张春华-雪中舞刃"></div>
+                    </a>
+                    <div class="text">
+                        <h4>张春华-雪中舞刃</h4>
+                    </div>
+                </li>
+                <li> 
+                    <a href="./video10.html">
+                        <div class="pic"><img src="./img/蔡夫人-计上心来.png" alt="蔡夫人-计上心来"></div>
+                    </a>
+                    <div class="text">
+                        <h4>蔡夫人-计上心来</h4>
+                    </div>
+                </li>
+                <li> 
+                    <a href="./video17.html">
+                        <div class="pic"><img src="./img/甄姬.png" alt="甄姬"></div>
+                    </a>
+                    <div class="text">
+                        <h4>甄姬</h4>
+                    </div>
+                </li>
+                <li> 
+                    <a href="./video11.html">
+                        <div class="pic"><img src="./img/貂蝉-舞惑群心 .png" alt="貂蝉-舞惑群心"></div>
+                    </a>
+                    <div class="text">
+                        <h4>貂蝉-舞惑群心</h4>
+                    </div>
+                </li>
+                <li> 
+                    <a href="./video3.html">
+                        <div class="pic"><img src="./img/临军对阵.png" alt="临军对阵"></div>
+                    </a>
+                    <div class="text">
+                        <h4>临军对阵</h4>
+                    </div>
+                </li>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><a href="#">精品男武将</a></legend>
+            <div class="f-wrap">
+                <!-- 修改：移除冗余的ul标签，直接使用li -->
+                <li> 
+                    <a href="./video5.html">
+                        <div class="pic"><img src="./img/文鸯.png" alt="文鸯"></div>
+                    </a>
+                    <div class="text">
+                        <h4>文鸯</h4>
+                    </div>
+                </li>
+                <li> 
+                    <a href="./video4.html">
+                        <div class="pic"><img src="./img/徐盛-破军杀将.png" alt="徐盛-破军杀将"></div>
+                    </a>
+                    <div class="text">
+                        <h4>徐盛-破军杀将</h4>
+                    </div>
+                </li>
+                <li> 
+                    <a href="./video6.html">
+                        <div class="pic"><img src="./img/曹丕_thm2_prob3.png" alt="曹丕"></div>
+                    </a>
+                    <div class="text">
+                        <h4>曹丕</h4>
+                    </div>
+                </li>
+                <li> 
+                    <a href="./video9.html">
+                        <div class="pic"><img src="./img/潜蛟觊天.png" alt="潜蛟觊天"></div>
+                    </a>
+                    <div class="text">
+                        <h4>潜蛟觊天</h4>
+                    </div>
+                </li>
+                <li> 
+                    <a href="./video1.html">
+                        <div class="pic"><img src="./img/勇撼日月-太史慈.png" alt="太史慈"></div>
+                    </a>
+                    <div class="text">
+                        <h4>太史慈</h4>
+                    </div>
+                </li>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><a href="#">神将专区</a></legend>
+            <div class="f-wrap">
+                <!-- 修改：移除冗余的ul标签，直接使用li -->
+                <li> 
+                    <a href="./video13.html">
+                        <div class="pic"><img src="./img/神荀彧-匡汉延祚.png" alt="神荀彧"></div>
+                    </a>
+                    <div class="text">
+                        <h4>神荀彧</h4>
+                    </div>
+                </li>
+                <li> 
+                    <a href="./video16.html">
+                        <div class="pic"><img src="./img/神吕布 00_00_04-.png" alt="神吕布"></div>
+                    </a>
+                    <div class="text">
+                        <h4>神吕布</h4>
+                    </div>
+                </li>
+                <li> 
+                    <a href="./video15.html">
+                        <div class="pic"><img src="./img/神周瑜.png" alt="神周瑜"></div>
+                    </a>
+                    <div class="text">
+                        <h4>神周瑜</h4>
+                    </div>
+                </li>
+                <li> 
+                    <a href="./video14.html">
+                        <div class="pic"><img src="./img/神孙策-霸王再世.png" alt="神孙策"></div>
+                    </a>
+                    <div class="text">
+                        <h4>神孙策</h4>
+                    </div>
+                </li>
+                <li> 
+                    <a href="./video12.html">
+                        <div class="pic"><img src="./img/神郭嘉-倚星折月待机2.120fps_8.png" alt="神郭嘉-倚星折月待机"></div>
+                    </a>
+                    <div class="text">
+                        <h4>神郭嘉-倚星折月待机</h4>
+                    </div>
+                </li>
+            </div>
+        </fieldset>
+    </div>
+        <!-- 商标 -->
+         <div class="footer">
+        <div class="wrapper">
+            <div class="left">
+                <a href="https://download.sanguosha.cn/sgswx/sgs438.apk"><img src="./img/logo copy.png" alt=""></a>
+                <p>哔咔漫画学成在线致力于普及中国最好的漫画，它与中国一流漫画家和机构合作提供精彩漫画@2017年XTCG Inc.保留所有权利。-沪ICP备15025210号</p>
+                <a href="https://download.sanguosha.cn/sgswx/sgs438.apk" class="download">下载app</a>
+            </div>
+          <div class="right">
+            <dl>
+                <dt>首页</dt>
+                <dd><a href="https://kf1.yokagames.com/front/index/templet-show?id=3">帮助FAQ</a></dd>
+                <dd><a href="https://www.sanguosha.cn/pc/index">站点地图</a></dd>
+            </dl>
+            <dl>
+                <dt>邮箱投稿</dt>
+                <dd><a href="https://xianhua.sanguosha.cn/">加入我们</a></dd>
+                <dd><a href="https://space.bilibili.com/587050283">联系我们</a></dd>
+            </dl>
+            <dl>
+                <dt>关于哔咔</dt>
+                <dd><a href="#">用户协议</a></dd>
+                <dd><a href="#">漏洞奖励</a></dd>
+            </dl>
+          </div>  
+        </div>
+     </div>
+    <!-- 修改：修正JS路径中的双斜杠 -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

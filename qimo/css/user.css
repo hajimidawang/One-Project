@@ -1,0 +1,136 @@
+/* 重置默认样式 */
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 声明容器最小高度为100vh */
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.container {
+  display: flex; /* 使用 Flex 布局让左右并排 */
+  width: 900px; /* 调整整体宽度 */
+  /* 其他样式保持不变... */
+}
+
+.form-container.sign-up-container {
+  width: 55%; /* 左侧表单区域占比 */
+  /* 其他样式保持不变... */
+}
+
+/* 新增图片区域样式 */
+.image-box {
+  width: 45%; /* 右侧图片区域占比 */
+  background-color: #f9fafc; /* 柔和的背景色 */
+  display: flex; /* 使用 Flex 布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  padding: 20px; /* 内边距，避免图片紧贴边缘 */
+  position: relative; /* 为装饰元素提供定位参考 */
+}
+
+.image-box img {
+  max-width: 85%; /* 限制图片最大宽度，留出边距 */
+  max-height: 85%; /* 限制图片最大高度 */
+  object-fit: contain; /* 保持图片比例，完整显示 */
+  border-radius: 12px; /* 圆角更美观 */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* 添加轻微阴影 */
+  transition: transform 0.3s ease; /* 悬停动画 */
+}
+
+.image-box img:hover {
+  transform: scale(1.03); /* 悬停时微放大 */
+}
+
+/* 装饰元素（可选） */
+.image-box::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #165DFF 0%, #7B61FF 100%);
+  border-radius: 50%;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.image-box::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #FF7D00 0%, #FFB547 100%);
+  border-radius: 50%;
+  opacity: 0.1;
+  z-index: 0;
+}
+h2 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social {
+  border: 1px solid #DDDDDD;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  color: #333;
+  text-decoration: none;
+}
+
+input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #FF4B2B;
+  background-color: #FF4B2B;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+.signUp {
+  margin-top: 20px;
+}
